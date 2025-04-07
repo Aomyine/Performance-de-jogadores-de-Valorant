@@ -27,8 +27,8 @@ df_clean[target] = le.fit_transform(df_clean[target])
 X = df_clean[features]
 y = df_clean[target]
 
-# Criar modelo KNN com K=20
-knn = KNeighborsClassifier(n_neighbors=20)
+# Criar modelo KNN com K=7
+knn = KNeighborsClassifier(n_neighbors=7)
 
 # Validação cruzada estratificada (garante proporções entre folds)
 skf = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
